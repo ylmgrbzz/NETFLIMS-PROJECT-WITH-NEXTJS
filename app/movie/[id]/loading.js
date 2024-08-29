@@ -1,16 +1,13 @@
 import React from "react";
-import { Skeleton } from "@/components/skeleton";
 
-function CategoriesLoading() {
+import { Loading } from "@/components/loading";
+
+function MovieLoading() {
   return (
-    <div className={styles.categories}>
-      {Array(5)
-        .fill(null)
-        .map((_, index) => (
-          <Skeleton key={index} height={72} />
-        ))}
+    <div style={{ height: "100%" }}>
+      <Loading />
     </div>
   );
 }
 
-export { CategoriesLoading };
+export default MovieLoading;
