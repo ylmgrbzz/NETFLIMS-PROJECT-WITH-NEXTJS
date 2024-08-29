@@ -1,5 +1,6 @@
-import Image from "next/image";
+import react from "react";
+import HomeContainer from "@/containers/home";
 
 export default function Home() {
-  return <div></div>;
+  return <HomeContainer />;
 }
